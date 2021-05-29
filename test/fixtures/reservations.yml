@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_date: 2021-05-28
+  end_date: 2021-05-28
+  nights: 1
+  number_of_guests: 1
+
+two:
+  start_date: 2021-05-28
+  end_date: 2021-05-28
+  nights: 1
+  number_of_guests: 1

@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_05_29_231934) do
     t.string "first_name"
     t.string "last_name"
     t.string "email"
-    t.text "phone_numbers"
+    t.text "phone"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "service_id"
@@ -31,11 +31,11 @@ ActiveRecord::Schema.define(version: 2021_05_29_231934) do
     t.integer "infants"
     t.integer "status"
     t.string "currency", default: "AUD"
-    t.float "list_price"
+    t.float "payout_price"
     t.float "security_price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.float "paid_amount"
+    t.float "total_price"
     t.index ["guest_id"], name: "index_reservations_on_guest_id"
   end
 

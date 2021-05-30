@@ -6,6 +6,8 @@ class UpdateReservation < ActiveRecord::Migration[6.1]
     change_column :reservations, :list_price, :float
     rename_column :reservations, :list_price, :payout_price
     change_column :reservations, :security_price, :float
+    change_column :reservations, :adults, :integer, default: 0
+    change_column :reservations, :children, :integer, default: 0
   end
 
   def down

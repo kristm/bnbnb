@@ -2,10 +2,11 @@
 
 one:
   start_date: 2021-05-28
-  end_date: 2021-05-28
+  end_date: 2021-06-01
   adults: 1
 
 two:
   start_date: 2021-05-28
-  end_date: 2021-05-28
-  adults: 1
+  end_date: 2021-06-28
+  adults: 2
+  children: 1

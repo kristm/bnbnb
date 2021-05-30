@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(version: 2021_05_29_231934) do
     t.integer "guest_id"
     t.date "start_date"
     t.date "end_date"
-    t.integer "adults"
-    t.integer "children"
+    t.integer "adults", default: 0
+    t.integer "children", default: 0
     t.integer "infants"
     t.integer "status"
     t.string "currency", default: "AUD"

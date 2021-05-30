@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Requirements
+ruby 2.6.6
 
-Things you may want to cover:
+### Build
+```
+bundle install
+bundle exec rails db:setup
+```
 
-* Ruby version
+### Run
+```
+bundle exec rails s
 
-* System dependencies
 
-* Configuration
+# in a another terminal
+# test first payload format
+curl -vX POST http://localhost:3000/reservations.json -d @payload1.json --header "Content-Type: application/json"
 
-* Database creation
+# test second payload format
+curl -vX POST http://localhost:3000/reservations.json -d @payload2.json --header "Content-Type: application/json"
+```
 
-* Database initialization
+### Test
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`bundle exec rails test`

@@ -27,6 +27,7 @@ module Hometime
     #skip active_storage
     config.active_storage.draw_routes = false
 
+    config.autoload_paths += Dir[Rails.root.join("app", "services", "{*/}")]
     config.api_only = true
   end
 end
